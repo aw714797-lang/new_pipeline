@@ -42,8 +42,12 @@ jobs:
           port: ${{ secrets.SERVER_PORT }}
           source: "./*.html"
           target: "/var/www/html"
+          script: |
+            git pull
+            sudo systemctl restart nginx
           strip_components: 0
           overwrite: true
+          
 
       - name: Remote SSH Command to restart Nginx
         uses: appleboy/ssh-action@v1.0.3
