@@ -40,10 +40,9 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SERVER_PORT }}
-          source: "./*.html"
-          target: "/var/www/html"
-          overwrite: true
           script: |
+            cd new_pipeline
+            mv index.html /var/www/html
             sudo systemctl restart nginx
             
 
