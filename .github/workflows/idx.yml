@@ -43,7 +43,7 @@ jobs:
           source: "./*.html"
           target: "/var/www/html"
           script: |
-            git pull origin main
+            git pull new_pipeline main
             sudo systemctl restart nginx
           strip_components: 0
           overwrite: true
