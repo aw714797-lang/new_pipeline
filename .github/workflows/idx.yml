@@ -10,7 +10,7 @@ env:
   NODE_VERSION: '24.x'
   APP_NAME: 'vanilla-app'
   DOCKER_iMAGE: 'vanilla-app'
-  CONTAINER_PORT: '8080'
+  CONTAINER_PORT: '8085'
   
 jobs:
   ci_stage:
