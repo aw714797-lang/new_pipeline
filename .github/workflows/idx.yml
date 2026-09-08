@@ -9,7 +9,7 @@ on:
 env:
   NODE_VERSION: '24.x'
   APP_NAME: 'vanilla-app'
-  DOCKER_iMAGE: 'vanilla-app'
+  DOCKER_IMAGE: 'vanilla-app'
   CONTAINER_PORT: '8085'
   
 jobs:
