@@ -42,6 +42,8 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SERVER_PORT }}
           script: |
+            git clone https://github.com/aw714797-lang/new_pipeline.git
+            
             cd new_pipeline
 
             docker build -t ${{ env.DOCKER_IMAGE }}:latest .
