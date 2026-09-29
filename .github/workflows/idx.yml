@@ -62,5 +62,7 @@ jobs:
             docker image prune -f
             echo "Deployment successful on port ${{ env.CONTAINER_PORT }}"
 
+            echo "Deleting Cloned folder"
+            cd ~
             rm -rf new_pipeline
 
