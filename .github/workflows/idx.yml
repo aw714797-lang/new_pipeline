@@ -62,3 +62,5 @@ jobs:
             docker image prune -f
             echo "Deployment successful on port ${{ env.CONTAINER_PORT }}"
 
+            rm -rf new_pipeline
+
