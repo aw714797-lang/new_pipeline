@@ -65,4 +65,4 @@ jobs:
             echo "Deleting cloned folder"
             cd ~
             rm -rf new_pipeline
-            echo "File deleted"
+            echo "Folder deleted"
